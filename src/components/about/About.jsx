@@ -4,12 +4,7 @@ const About = () => {
 	return (
 		<div>
 			<h1>Welcome</h1>
-			<p>
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
-				accusamus obcaecati minima enim libero provident nesciunt omnis eos
-				pariatur quod nulla iure assumenda, quasi aut sequi tempore, cumque
-				rerum sunt!
-			</p>
+			<p>El css llegara en breve.. lamento que deba ver algo tan feo u.u</p>
 		</div>
 	);
 };
