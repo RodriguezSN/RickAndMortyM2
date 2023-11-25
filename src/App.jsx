@@ -41,6 +41,10 @@ function App() {
 	};
 	useEffect(() => {
 		!access && navigate("/");
+		// !access && navigate("/home");
+		if (pathname !== "/" && pathname !== "/home" && pathname !== "about") {
+			navigate("/notFound");
+		}
 	}, [access]);
 	const comprobador = (characterApi) => {
 		const idExist = characters.some(
