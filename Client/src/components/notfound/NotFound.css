@@ -1,0 +1,19 @@
+.conteinerNotFound {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("img/1401474-rick-and-morty.jpg");
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: blueviolet;
+}
+.conteinerNotFound button {
+	width: 180px;
+}
