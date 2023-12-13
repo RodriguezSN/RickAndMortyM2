@@ -1,6 +1,6 @@
 const axios = require("axios");
 const API = `https://rickandmortyapi.com/api/character`;
-const API_KEY = "henrystaff";
+// const API_KEY = "henrystaff";
 const getCharById = (res, id) => {
 	axios
 		.get(`${API}/${id}`)

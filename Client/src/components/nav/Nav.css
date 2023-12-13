@@ -1,5 +1,10 @@
 #IdNav {
 	display: flex;
 	width: 100%;
-	background-color: aqua;
+	height: 55px;
+	margin-top: 5px;
+	background-color: rgb(83, 16, 164);
+}
+div {
+	width: 100%;
 }

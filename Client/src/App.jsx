@@ -17,10 +17,10 @@ import Form from "./components/form/Forms.jsx";
 
 // const URLVieja = "https://rym2.up.railway.app/api/character";
 // const URL = `http://localhost:3001/rickandmorty/character`;
-const URL = `http://localhost:3001/api/character`;
-const API_KEY = "henrystaff";
+// const API_KEY = "henrystaff";
 
 function App() {
+	const URL = `http://localhost:3001/api/character`;
 	const navigate = useNavigate();
 	const location = useLocation();
 	const { pathname } = location;
@@ -30,10 +30,10 @@ function App() {
 
 	const [access, setAccess] = useState(false);
 	const EMAIL = "sebas@gmail.com";
-	const PASSWORD = "seB12";
+	const PASSWORD = "1234";
 
 	function login(userData) {
-		if (userData.email === EMAIL && userData.password === PASSWORD) {
+		if (userData.password === PASSWORD && userData.email === EMAIL) {
 			setAccess(true);
 			navigate("/home");
 		}
@@ -67,7 +67,7 @@ function App() {
 
 	const characterRandom = () => {
 		const randomId = Math.floor(Math.random() * 826) + 1;
-		axios(`${URL}/${randomId}?key=${API_KEY}`).then(({ data }) => {
+		axios(`${URL}/${randomId}`).then(({ data }) => {
 			comprobador(data);
 		});
 	};
